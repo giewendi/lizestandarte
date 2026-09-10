@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Executive Assistant | Portfolio Bio</title>
+  <meta name="description" content="Executive Assistant portfolio bio showcasing expertise, experience, tools, and client reviews." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Ambient background blobs -->
+  <div class="bg">
+    <span class="blob b1" aria-hidden="true"></span>
+    <span class="blob b2" aria-hidden="true"></span>
+    <span class="blob b3" aria-hidden="true"></span>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Liz Estandarte</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#tools">Tools</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact" class="btn btn-sm">Contact</a>
+      </nav>
+
+      <!-- Theme Toggle (from previous step) -->
+      <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span class="theme-icon" id="themeIcon" aria-hidden="true">🌙</span>
+        <span id="themeLabel">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal" data-reveal>
+          <p class="pill">
+            <span class="dot"></span>
+            Executive Partnership • Business Operations • People Operations
+          </p>
+
+          <h1 class="headline">
+            Hi, I’m <span class="grad">Liz Estandarte</span>
+          </h1>
+
+          <p class="subhead">
+            More than support. I help move the business forward.<br>
+            I partner with executives and teams to manage priorities, coordinate people and projects, strengthen workflows, and turn ideas and priorities into purposeful business outcomes.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#contact">Get in Touch</a> 
+            <a class="btn btn-ghost" href="#reviews">View Client Reviews</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">5+ years</div>
+              <div class="stat-label">Executive & Operations<br>Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5+ Industries</div>
+              <div class="stat-label">Adaptable Across<br>Business Environments</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">2,500+</div>
+              <div class="stat-label">Client Tickets Resolved</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">500+</div>
+              <div class="stat-label">Sales Estimates Produced</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">25+</div>
+              <div class="stat-label">Team Operations Supported<br>People + Systems</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" data-reveal>
+          <div class="portrait">
+            <!-- Replace src with her real photo -->
+            <img src="./assets/images/hero-img.jpg"
+                 alt="Portrait of [Name]" />
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <!-- <div class="portrait-chip">
+              <strong>Available:</strong> Part-time / Full-time
+            </div> -->
+          </div>
+
+          <div class="hero-card-bottom">
+            <h2 class="hero-card-title">Executive Business Partner</h2>
+            <!-- <div class="mini">
+              <div class="mini-title">Core Focus</div>
+              <p class="muted">
+                Executive support, operations, client coordination, documentation, and workflow optimization.
+              </p>
+            </div> -->
+
+            <div class="mini">
+              <!-- <div class="mini-title">Tools (quick list)</div> -->
+              <p class="muted">Executive Support • Operations • People Operations • Stakeholder Coordination • Process Improvement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-strip reveal" data-reveal>
+        <div class="strip-card">
+          <div class="strip-icon">⚡</div>
+          <div>
+            <div class="strip-title">Executive & Operations Experience</div>
+            <div class="strip-text"><span>Operations-Minded Support</span><br>I combine executive support with a broader understanding of business operations, keeping priorities, people, and day-to-day execution aligned while improving workflows, anticipating needs, and helping the organization operate more efficiently.</div>
+          </div>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon">🌐</div>
+          <div>
+            <div class="strip-title">Cross-Industry Experience</div>
+            <div class="strip-text"><span>Adaptability Across Business Environments</span><br>Experience across venture capital, service businesses, gaming & entertainment, real estate, and other client-facing environments has strengthened my ability to learn quickly and adapt to different ways of working.
+            </div>
+          </div>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon">🎯</div>
+          <div>
+            <div class="strip-title">High-Ownership</div>
+            <div class="strip-text"><span>Independent Execution</span><br>I take responsibility from understanding what needs to happen and setting clear priorities through execution and follow-through, working independently, anticipating potential roadblocks, while knowing when alignment or executive input is needed.</div>
+          </div>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon">✓</div>
+          <div>
+            <div class="strip-title">Proven Impact</div>
+            <div class="strip-text"><span>Quality, Accuracy & Follow-Through</span><br>I bring a consistent standard of thoughtful, detail-oriented work—balancing speed with accuracy and making sure responsibilities are carried through to completion.</div>
+          </div>
+        </div>
+        <div class="strip-card">
+          <div class="strip-icon">🧩</div>
+          <div>
+            <div class="strip-title">People + Systems</div>
+            <div class="strip-text"><span>People-Centered, Operations-Minded</span><br>I combine an understanding of people and communication with structured workflows, documentation, and systems to help teams work more effectively.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+<section id="expertise" class="section">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <h2>Expertise</h2>
+      <p>
+        A versatile skill set built around executive support, operational structure,
+        client communication, and scalable systems.
+      </p>
+    </div>
+
+    <div class="expertise-grid">
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Executive & Business Support</h3>
+        <p>High-level support that keeps executives organized, prepared, and focused on business priorities.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Business Operations</h3>
+        <p>Coordinating the people, processes, information, and day-to-day activities that keep a business moving.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>People Operations & HR Support</h3>
+        <p>Supporting the employee lifecycle through practical people processes, documentation, communication, and employee support.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Talent Acquisition & Recruiting</h3>
+        <p>Candidate sourcing, screening, initial interviews, interview coordination, and hiring support.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Employee Relations & Retention</h3>
+        <p>Supporting employee concerns, workplace communication, performance matters, engagement, and retention initiatives.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Stakeholder Management</h3>
+        <p>Building clear, responsive communication across executives, clients, employees, vendors, founders, investors, and external partners.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Cross-Functional Coordination</h3>
+        <p>Connecting teams, stakeholders, priorities, and deliverables to keep work aligned and moving forward.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Executive Communication</h3>
+        <p>Managing professional correspondence, briefs, follow-ups, and information flow with clarity and discretion.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Project & Event Coordination</h3>
+        <p>Managing timelines, logistics, documentation, budgets, vendors, attendees, and execution from planning through completion.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Process & Workflow Improvement</h3>
+        <p>Identifying operational friction and creating practical improvements that strengthen organization, ownership, and follow-through.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>CRM & Data Management</h3>
+        <p>Maintaining accurate records, pipelines, contacts, activities, and business information across CRM and workflow systems.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Research & Data-Informed Decision Support</h3>
+        <p>Turning research, business information, and relevant data into concise insights that support better decisions.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Budget, Billing & Vendor Coordination</h3>
+        <p>Supporting budgets, invoices, billing accuracy, procurement, vendor relationships, and expense tracking.</p>
+      </div>
+
+      <div class="expertise-card reveal" data-reveal>
+        <h3>Client & Customer Operations</h3>
+        <p>Managing communication, service concerns, escalations, follow-ups, and customer workflows with a solutions-focused approach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <h2>Services</h2>
+          <p>Flexible support packages tailored to your workflow, communication style, and team needs.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card reveal" data-reveal>
+            <h3>Executive & Strategic Support</h3>
+            <p>Reliable, high-ownership support that protects executive time and keeps priorities, communication, and follow-through under control.</p>
+            <ul class="list">
+              <li>Calendar & Inbox Management</li>
+              <li>Executive Briefs & Research</li>
+              <li>Travel & Meeting Coordination</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <h3>Business & Operations Support</h3>
+            <p>I help organize day-to-day operations, improve workflows, and coordinate the moving parts behind a growing business.</p>
+            <ul class="list">
+              <li>Workflow & Process Improvement</li>
+              <li>CRM & Documentation</li>
+              <li>Cross-Functional Coordination</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <h3>People Operations & Recruiting</h3>
+            <p>Practical people support across hiring, employee coordination, workplace concerns, and the systems that support a growing team.</p>
+            <ul class="list">
+              <li>Recruiting & Interviews</li>
+              <li>Employee Operations</li>
+              <li>Engagement & Retention</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <h3>Projects, Events & Business Coordination</h3>
+            <p>End-to-end coordination for projects, company events, offsites, vendors, and business initiatives that require organized execution.</p>
+            <ul class="list">
+              <li>Project & Event Logistics</li>
+              <li>Budget & Vendor Coordination</li>
+              <li>Stakeholder Management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <h2>Professional Experiences</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Executive Partner — Athena</h3>
+                <span class="tag">Aug 2024 — July 2026</span>
+              </div>
+              <label>
+                Private Venture Capital
+              </label>
+              <ul class="experience-list">
+                <li>Managed executive inboxes, calendars, high-volume founder/investor meetings, travel, documents, and time-sensitive day-to-day coordination.</li>
+                <li>Maintained and optimized Airtable, Notion, and CRM workflows, keeping relationship pipelines, contacts, priorities, and recurring records accurate and functional.</li>
+                <li>Conducted founder, company, investor, and event-attendee research; prepared executive briefs/memos and updated CRM intelligence to support meetings and decisions.</li>
+                <li>Facilitated candidate screening, initial interviews, and hiring coordination while maintaining clear communication with candidates and internal stakeholders.</li>
+                <li>Served as a liaison across executives, internal teams, founders, investors, and external stakeholders, coordinating follow-ups, action items, and cross-functional communication.</li>
+                <li>Managed executive travel and multi-day company offsites/retreats, including accommodations, dining, activities, reservations, budgets, attendee preferences, and contingency planning.</li>
+                <li>Monitored flagged workflow/automation issues within existing systems and handled recurring troubleshooting within assigned access to keep operations moving.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Executive Support</span>
+                <span class="metric">✅ CRM Management</span>
+                <span class="metric">✅ Research</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Executive Partner — Athena</h3>
+                <span class="tag">Aug 2024 — July 2026</span>
+              </div>
+              <label>
+                Service-Based Landscaping & Lawn Care
+              </label>
+              <ul class="experience-list">
+                <li>Partnered directly with business leadership across executive support, customer operations, scheduling, CRM, billing, sales support, vendor coordination, and business development.</li>
+                <li>Managed client communication across executive inboxes and service channels, resolving 2,500+ tickets within six months involving service concerns, billing issues, escalations, follow-ups, and sales outreach.</li>
+                <li>Managed executive calendar, meeting preparation, and pre/post-meeting workflows, helping improve scheduling efficiency and team responsiveness by 60%.</li>
+                <li>Produced 500+ accurate sales and cold estimates supporting project planning, client acquisition, and revenue opportunities.</li>
+                <li>Conducted job-costing and billing audits, investigated discrepancies, and supported billing escalations to maintain accurate financial and service operations.</li>
+                <li>Improved digital file management, ticket labels, task ownership, recurring/seasonal service tracking, and follow-through to strengthen visibility and internal coordination.</li>
+                <li>Supported recruiting for landscaping and lawn-care roles through candidate sourcing, screening, initial interviews, and hiring coordination; also contributed to sales, marketing, and vendor initiatives.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Executive Support</span>
+                <span class="metric">✅ Business Development</span>
+                <span class="metric">✅ Operations and Admin Tasks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Office & Operations Manager</h3>
+                <span class="tag">Apr 2025 — Feb 2026</span>
+              </div>
+              <label>
+                Gaming & Entertainment Industry — Independent Engagement
+              </label>
+              <ul class="experience-list">
+                <li>Managed day-to-day office and people operations for a 25-person customer service team across on-site, hybrid, and remote work arrangements, serving as the primary liaison between employees and executive management.</li>
+                <li>Spearheaded the establishment of the physical office from the ground up, sourcing operational requirements and procuring equipment, furniture, appliances, and supplies within an executive-approved budget.</li>
+                <li>Managed operational expenses, billing, invoices, procurement, office maintenance, security, and vendor coordination with accountability for allocated company funds.</li>
+                <li>Owned the employee lifecycle from candidate sourcing, screening, interviewing, and onboarding through attendance and performance concerns, employee support, retention initiatives, and offboarding.</li>
+                <li>Built foundational people-operations processes, including leave and attendance tracking, employee records, transportation allowances, and practical support for hybrid and remote employees.</li>
+                <li>Advocated for employee needs involving workload, systems, performance, and workplace concerns while communicating management priorities and coordinating follow-through with assistant managers.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Team Management</span>
+                <span class="metric">✅ Office Management</span>
+                <span class="metric">✅ Employee Relations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>DCX Inc. Philippines</h3>
+                <span class="tag">Feb 2023 — Sep 2023</span>
+              </div>
+              <label>
+                Promotional Sales Assistant
+              </label>
+              <ul class="experience-list">
+                <li>Supported executive calendar, meetings, travel arrangements, calls, emails, and client communication while serving as a liaison across executives, clients, suppliers, customers, and internal teams.</li>
+                <li>Coordinated promotional projects and cross-functional execution, helping keep deadlines, budgets, deliverables, and stakeholder requirements on track.</li>
+                <li>Prepared, edited, and proofread documents, presentations, sales pitches, and internal communications; supported invoices, payment tracking, and expense management.</li>
+                <li>Supported corporate events, promotional events, and trade shows, coordinating logistics, registrations, accommodations, marketing materials, and promotional merchandise.</li>
+                <li>Developed digital campaigns across social media, email, and online platforms, contributing to a 60% increase in engagement and 15% growth in sales; also supported website and social content.</li>
+                <li>Conducted market and competitor research and negotiated supplier pricing/contract terms, securing up to 10% in cost savings while maintaining favorable business terms.</li>
+                <li>Supported recruitment through applicant sourcing and screening, interview coordination, and initial candidate interviews; used CRM/project-management tools to maintain organized workflows and confidential records.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Sales Support</span>
+                <span class="metric">✅ Marketing</span>
+                <span class="metric">✅ Recruitment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Executive Virtual Assistant — Virtudesk</h3>
+                <span class="tag">Feb 2022 — Aug 2022</span>
+              </div>
+              <label>
+                Real Estate Industry
+              </label>
+              <ul class="experience-list">
+                <li>Acted as a liaison between clients and the executive, handling inquiries, coordinating property viewings, and maintaining responsive client communication.</li>
+                <li>Managed CRM systems and sales pipelines to track leads, client interactions, property activity, and follow-ups.</li>
+                <li>Created property marketing materials, social media content, email campaigns, and listing assets, contributing to a 25% increase in property inquiries and five successful deals.</li>
+                <li>Conducted market research and compiled reports on real estate trends, property values, and competitor activity to support executive decision-making.</li>
+                <li>Provided comprehensive administrative support including calendar management, meeting and transaction coordination, budgets, invoices, payments, proposals, and presentations - contributing to a 30% improvement in executive time management.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Administrative Support</span>
+                <span class="metric">✅ CRM Management</span>
+                <span class="metric">✅ Market Research</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Advisor I | Customer Service — Concentrix</h3>
+                <span class="tag">Jun 2021 — Jan 2022</span>
+              </div>
+              <label>
+                Telecommunications Account
+              </label>
+              <ul class="experience-list">
+                  <li>Maintained a 98% customer satisfaction rate while providing technical support and resolving customer concerns efficiently.</li>
+                  <li>Managed 40-50 inbound customer interactions daily, strengthening communication, problem-solving, prioritization, and service recovery skills.</li>
+                  <li>Translated complex technical information into clear, empathetic, customer-friendly communication.</li>
+                  <li>Utilized CRM platforms to document interactions, manage service requests, and maintain accurate account records.</li>
+                  <li>Identified opportunities to recommend relevant products and services, building experience in consultative selling and customer retention.</li>
+              </ul>
+              <div class="t-metrics">
+                <span class="metric">✅ Inbound Calls</span>
+                <span class="metric">✅ Customer Satisfaction</span>
+                <span class="metric">✅ Consultative Selling</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-head reveal" data-reveal style="margin-top: 20px;">
+            <h2>Internship Experiences</h2>
+          </div>
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Jr. Partner - Program Associate</h3>
+                <span class="tag">JAN - MAR 2024</span>
+              </div>
+              <label>
+                CIRCA LOGICA GROUP | INTERNATIONAL HR INSTITUTE
+              </label>
+              <ul class="experience-list">
+                <li>Supported talent development and professional training initiatives through participant sourcing, outreach, engagement, and follow-up for certification and development programs.</li>
+                <li>Supported recruitment-related outreach while maintaining professional communication with prospective participants and stakeholders.</li>
+                <li>Tracked program engagement and performance metrics, presented weekly business reviews, and supported special projects and digital program promotion.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>Behavioral Therapist Intern</h3>
+                <span class="tag">AUG - OCT 2023</span>
+              </div>
+              <label>
+                PARTNERS IN CHILD DEVELOPMENT AND PROGRESS
+              </label>
+              <ul class="experience-list">
+                <li>Applied behavioral observation, assessment, structured intervention, and individualized support while strengthening communication and collaborative problem-solving.</li>
+                <li>Maintained session documentation, behavioral data, and progress reports and prepared a formal case study to support evidence-based evaluation.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-head reveal" data-reveal style="margin-top: 20px;">
+            <h2>Leadership & Organizational Experiences</h2>
+          </div>
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>APL.DE.AP MUSIC STUDIO ORGANIZATION, HOLY ANGEL UNIVERSITY</h3>
+                <span class="tag">2022 - 2024</span>
+              </div>
+              <label>
+                Talent Manager | Public Relations & Social Media
+              </label>
+              <ul class="experience-list">
+                <li>Managed talent activities and creative engagements for artists performing within and outside the university while coordinating organizational and external-facing initiatives.</li>
+                <li>Supported public relations, digital campaigns, events, and stakeholder/brand partnership coordination, serving as a liaison across talents, members, and external partners.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>SCHOOL OF ARTS AND SCIENCES - COLLEGE STUDENT COUNCIL</h3>
+                <span class="tag">2022 - 2024</span>
+              </div>
+              <label>
+                Board of Human Resources Staff
+              </label>
+              <ul class="experience-list">
+                <li>Supported recruitment, evaluation, selection, and placement of new council members while helping delegate work and provide team oversight.</li>
+                <li>Organized and coordinated student events, preparing proposals, permits/consent documents, event plans, budget allocations, and other requirements for school approval and execution.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="t-item reveal" data-reveal>
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-content">
+              <div class="t-top">
+                <h3>HAU PSYCHOLOGY SOCIETY - COMMITTEE ON RECREATIONAL ACTIVITIES</h3>
+              </div>
+              <label>
+                Talent & Apprentice
+              </label>
+              <ul class="experience-list">
+                <li>Supported department events, recreational activities, and student talent development.</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS (NEW SECTION) -->
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <h2>Tools</h2>
+          <p>The tools I use daily to keep workflows organized, communication clean, and execution fast.</p>
+        </div>
+
+        <div class="toolbox reveal" data-reveal>
+          <h3>Productivity & Workflow</h3>
+          <div class="tool-grid">
+            <div class="tool">Notion</div>
+            <div class="tool">Airtable</div>
+            <div class="tool">Todoist</div>
+            <div class="tool">Asana</div>
+          </div>
+
+          <h3>Communication & Collaboration</h3>
+          <div class="tool-grid">
+            <div class="tool">Gmail</div>
+            <div class="tool">Google Meet</div>
+            <div class="tool">Microsoft Teams</div>
+            <div class="tool">Zoom</div>
+            <div class="tool">Slack</div>
+            <div class="tool">Ringcentral</div>
+            <div class="tool">Google Workspace</div>
+            <div class="tool">Microsoft Suite</div>
+          </div>
+
+
+          <h3>CRM & Industry</h3>
+          <div class="tool-grid">
+            <div class="tool">CRM Platforms</div>
+            <div class="tool">KVCore</div>
+            <div class="tool">SkySlope</div>
+            <div class="tool">Zillow</div>
+          </div>
+
+          <h3>Creative & Web</h3>
+          <div class="tool-grid">
+            <div class="tool">Canva</div>
+            <div class="tool">WordPress</div>
+            <div class="tool">Filmora</div>
+            <div class="tool">CapCut</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS (CAROUSEL) -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <h2>Client Reviews</h2>
+        </div>
+
+        <div class="carousel reveal" data-reveal>
+          <div class="carousel-top">
+            <button class="icon-btn" id="prevReview" aria-label="Previous review">‹</button>
+
+            <div class="carousel-window" aria-live="polite">
+              <div class="carousel-track" id="reviewTrack">
+                <article class="review">
+                  <div class="stars" aria-label="5 out of 5">★★★★★</div>
+                  <p class="quote">
+                    coming soon.
+                  </p>
+                  <div class="who">
+                    <strong>Owner, Riley</strong>
+                    <span>Executive Partner</span>
+                  </div>
+                </article>
+
+                <article class="review">
+                  <div class="stars" aria-label="5 out of 5">★★★★★</div>
+                  <p class="quote">
+                    coming soon.
+                  </p>
+                  <div class="who">
+                    <strong>Team Lead, James</strong>
+                    <span>Customer Support</span>
+                  </div>
+                </article>
+
+                <article class="review">
+                  <div class="stars" aria-label="5 out of 5">★★★★★</div>
+                  <p class="quote">
+                    coming soon. 
+                  </p>
+                  <div class="who">
+                    <strong>Operations Manager, Marj</strong>
+                    <span>Executive Assistant</span>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <button class="icon-btn" id="nextReview" aria-label="Next review">›</button>
+          </div>
+
+          <div class="carousel-dots" id="reviewDots" aria-label="Review navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal" data-reveal>
+            <h2>Let’s work together</h2>
+            <p>
+              Share what you need help with, your time zone, and how you like to work.
+              I’ll reply with availability and a clear next step.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="cc-title">Email</div>
+                <a href="mailto:pgestandarte@gmail.com">pgestandarte@gmail.com</a>
+              </div>
+              <div class="contact-card">
+                <div class="cc-title">LinkedIn</div>
+                <a href="https://linkedin.com/in/liz-estandarte/" target="_blank" rel="noreferrer">linkedin.com/in/liz-estandarte/</a>
+              </div>
+              <div class="contact-card">
+                <div class="cc-title">Location</div>
+                <span>Remote • Flexible Time Zones</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" data-reveal onsubmit="return false;">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              What do you need help with?
+              <textarea rows="5" placeholder="Executive support, client relations, recruitment, research, CRM, content..." required></textarea>
+            </label>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> <span class="muted">Liz Estandarte</span></div>
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#experience">Experience</a>
+          <a href="#tools">Tools</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>
