@@ -37,6 +37,14 @@
   --focus-ring: rgba(212, 6, 88, 0.22);
   --focus-border: rgba(212, 6, 88, 0.55);
 
+  /* Form feedback */
+  --ok-text: #7ee2b0;
+  --ok-bg: rgba(46, 200, 134, 0.10);
+  --ok-border: rgba(46, 200, 134, 0.32);
+  --err-text: #ff9a9a;
+  --err-bg: rgba(255, 92, 92, 0.10);
+  --err-border: rgba(255, 92, 92, 0.34);
+
   --shadow: 0 18px 60px rgba(0,0,0,0.45);
 
   --radius: 18px;
@@ -81,6 +89,13 @@ html[data-theme="light"]{
   --grad-text: linear-gradient(135deg, #b81b1b, #a1053f, #8c1f66);
 
   --shadow: 0 18px 50px rgba(23,21,28,0.10);
+
+  --ok-text: #0f6b47;
+  --ok-bg: rgba(16, 150, 100, 0.10);
+  --ok-border: rgba(16, 150, 100, 0.30);
+  --err-text: #a01414;
+  --err-bg: rgba(190, 30, 30, 0.08);
+  --err-border: rgba(190, 30, 30, 0.28);
 }
 
 /* Optional: slightly different page background feel for light mode */
@@ -671,6 +686,51 @@ input:focus, textarea:focus{
   box-shadow: 0 0 0 6px var(--focus-ring);
 }
 .form-note{margin: 10px 0 0; color: var(--muted-2); font-size: 12.5px; line-height: 1.5}
+
+/* Form validation + submit feedback */
+.field{margin-bottom: 12px}
+.field label{margin-bottom: 0}
+.hp-field{display:none}
+
+input[aria-invalid="true"], textarea[aria-invalid="true"]{
+  border-color: var(--err-border);
+}
+input[aria-invalid="true"]:focus, textarea[aria-invalid="true"]:focus{
+  box-shadow: 0 0 0 6px var(--err-bg);
+}
+
+.field-error{
+  margin: 6px 0 0;
+  color: var(--err-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.field-error:empty{display:none}
+
+.form-status{
+  margin: 4px 0 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.form-status[hidden]{display:none}
+.form-status strong{display:block; font-weight: 800; margin-bottom: 2px}
+.form-status a{color: inherit; text-decoration: underline}
+.form-status-success{
+  color: var(--ok-text);
+  background: var(--ok-bg);
+  border-color: var(--ok-border);
+}
+.form-status-error{
+  color: var(--err-text);
+  background: var(--err-bg);
+  border-color: var(--err-border);
+}
+
+.btn[disabled]{opacity: .65; cursor: progress}
 
 /* Footer */
 .footer{

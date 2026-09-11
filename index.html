@@ -689,19 +689,90 @@
             </div>
           </div>
 
-          <form class="form reveal" data-reveal onsubmit="return false;">
-            <label>
-              Name
-              <input type="text" placeholder="Your name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" placeholder="you@email.com" required />
-            </label>
-            <label>
-              What do you need help with?
-              <textarea rows="5" placeholder="Executive support, client relations, recruitment, research, CRM, content..." required></textarea>
-            </label>
+          <form
+            class="form reveal"
+            data-reveal
+            id="contactForm"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            novalidate
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <p class="hp-field" aria-hidden="true">
+              <label>
+                Don’t fill this out if you’re human
+                <input name="bot-field" tabindex="-1" autocomplete="off" />
+              </label>
+            </p>
+
+            <div class="field">
+              <label for="cf-name">
+                Name
+                <input
+                  id="cf-name"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                  maxlength="80"
+                  aria-describedby="cf-name-error"
+                />
+              </label>
+              <p class="field-error" id="cf-name-error" data-error-for="name"></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">
+                Email
+                <input
+                  id="cf-email"
+                  type="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                  required
+                  maxlength="120"
+                  aria-describedby="cf-email-error"
+                />
+              </label>
+              <p class="field-error" id="cf-email-error" data-error-for="email"></p>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">
+                What do you need help with?
+                <textarea
+                  id="cf-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Executive support, client relations, recruitment, research, CRM, content..."
+                  required
+                  minlength="20"
+                  maxlength="2000"
+                  aria-describedby="cf-message-error"
+                ></textarea>
+              </label>
+              <p class="field-error" id="cf-message-error" data-error-for="message"></p>
+            </div>
+
+            <div class="form-status form-status-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <strong>Thank you — your message is on its way.</strong>
+              <span>I’ll reply with availability and a clear next step.</span>
+            </div>
+
+            <div class="form-status form-status-error" id="formError" role="alert" hidden>
+              <strong>Your message didn’t send.</strong>
+              <span>
+                Please try again in a moment, or email
+                <a href="mailto:pgestandarte@gmail.com">pgestandarte@gmail.com</a> directly.
+              </span>
+            </div>
+
             <button class="btn" type="submit">Send Message</button>
           </form>
         </div>
