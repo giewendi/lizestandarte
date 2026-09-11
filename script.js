@@ -168,3 +168,106 @@ startAuto();
 
 // Keep it correct if window resizes (optional)
 window.addEventListener("resize", () => updateCarousel());
+
+/* =========================
+   Contact form (Netlify Forms)
+   - Validates on blur, clears as you fix
+   - Submits via AJAX so success/error shows in place
+   ========================= */
+const contactForm = document.getElementById("contactForm");
+const formSuccess = document.getElementById("formSuccess");
+const formError = document.getElementById("formError");
+
+if (contactForm) {
+  const submitBtn = contactForm.querySelector("button[type='submit']");
+  const submitText = submitBtn?.textContent;
+
+  const fields = Array.from(contactForm.querySelectorAll("input[name], textarea[name]"))
+    .filter(el => el.type !== "hidden" && el.name !== "bot-field");
+
+  function errorSlot(field) {
+    return contactForm.querySelector(`[data-error-for="${field.name}"]`);
+  }
+
+  function messageFor(field) {
+    const v = field.validity;
+    if (v.valueMissing) {
+      if (field.name === "email") return "Please enter your email address.";
+      if (field.name === "message") return "Please tell me what you need help with.";
+      return "Please enter your name.";
+    }
+    if (v.typeMismatch) return "Please enter a valid email address, like you@email.com.";
+    if (v.tooShort) return `Please use at least ${field.minLength} characters (${field.value.trim().length} so far).`;
+    if (v.tooLong) return `Please keep this under ${field.maxLength} characters.`;
+    return field.validationMessage;
+  }
+
+  function validate(field) {
+    // Trim first so whitespace alone can't pass a required field
+    if (field.value !== field.value.trim() && !field.value.trim()) field.value = "";
+
+    const ok = field.checkValidity();
+    const slot = errorSlot(field);
+
+    field.setAttribute("aria-invalid", ok ? "false" : "true");
+    if (slot) slot.textContent = ok ? "" : messageFor(field);
+
+    return ok;
+  }
+
+  function clearError(field) {
+    field.setAttribute("aria-invalid", "false");
+    const slot = errorSlot(field);
+    if (slot) slot.textContent = "";
+  }
+
+  fields.forEach(field => {
+    field.addEventListener("blur", () => validate(field));
+    field.addEventListener("input", () => {
+      if (field.getAttribute("aria-invalid") === "true") validate(field);
+    });
+  });
+
+  function setStatus(state) {
+    formSuccess?.toggleAttribute("hidden", state !== "success");
+    formError?.toggleAttribute("hidden", state !== "error");
+  }
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    setStatus(null);
+
+    const invalid = fields.filter(field => !validate(field));
+    if (invalid.length) {
+      invalid[0].focus();
+      return;
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+    }
+
+    try {
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(contactForm)).toString(),
+      });
+
+      if (!res.ok) throw new Error(`Submission failed with status ${res.status}`);
+
+      contactForm.reset();
+      fields.forEach(clearError);
+      setStatus("success");
+    } catch (err) {
+      console.error("Contact form submission failed:", err);
+      setStatus("error");
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = submitText;
+      }
+    }
+  });
+}
